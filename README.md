@@ -1,8 +1,10 @@
 # Install TensorFlow 2, Object Detection, and LabelImg on Mac OS
 
-This is how I set up my Mac to do ML object detection.  I hope this will help those of you who who are on Macs and are struggling to set up their learning environment.
+This is how I set up my Mac to do ML object detection.
 
 There are certain steps that are different between PC and Mac.  When I tried to follow instructions by people on PCs for setting up TensorFlow 2 (TF2), Object Detection, etc. I would end up with errors.
+
+I hope this will help those of you who who are on Mac OS and are struggling to set up your learning environment.
 
 * I am using a 2017 Macbook Pro with Big Sur OS.
 * I have [Python](https://www.python.org/) 3.8.2 installed (at time of writing).
