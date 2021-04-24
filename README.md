@@ -172,7 +172,7 @@ python -m pip install --use-feature=2020-resolver .
 ```
 python object_detection/builders/model_builder_tf2_test.py
 ```
-It should result in:
+It should result in something like:
 ```
 Ran 21 tests in 27.946s
 OK (skipped=1)
