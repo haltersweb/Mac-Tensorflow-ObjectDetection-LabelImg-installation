@@ -30,18 +30,12 @@ mkdir projects
 cd projects
 ```
 
-2. IMPORTANT: make sure to __update PIP and Homebrew__ before using them
-```
-pip install --upgrade pip
-brew update
-```
-
-3. Create a __virtual environment__ (this will also create a new directory).  We'll call it "funEnv".  You will also be sipulating the Python version to use (you can check it with `--version`).  I will be using Python 3.8.2.
+2. Create a __virtual environment__ (this will also create a new directory).  We'll call it "funEnv".  You will also be sipulating the Python version to use (you can check it with `--version`).  I will be using Python 3.8.2.
 ```
 python3.8 -m venv funEnv
 ```
 
-4. __Activate__ your virtual python environment.  We'll call ours "funEnv"
+3. __Activate__ your virtual python environment.  We'll call ours "funEnv"
 ```
 source funEnv/bin/activate
 ```
@@ -50,15 +44,20 @@ When you see the name of the environment in parentheses at the front of the prom
 (funEnv) [haltersweb]projects$
 ```
 
-5. To __deactivate__ your virtual Python environment just type:
-```
-deactivate
-```
-
-
-6. Navigate to your virtual environment to begin the next step.
+4. Navigate to your virtual environment
 ```
 cd funEnv
+```
+
+5. IMPORTANT: make sure to __update PIP and Homebrew__ before using them
+```
+pip install --upgrade pip
+brew update
+```
+
+FYI: To __deactivate__ your virtual Python environment just type:
+```
+deactivate
 ```
 
 ## Step 2. Install Jupyter Notebook IDE
@@ -81,7 +80,7 @@ jupyter notebook
 
 4. Copy the url from terminal and paste it into your browser. This runs an instance of Jupyter Notebook on localhost.
 
-5. To end the Jupyter session use `CTRL-C` and confirm.
+FYI: To __end the Jupyter session__ use `CTRL-C` and confirm.
 
 ## Step 3. Installing TensorFlow 2 with pip (on virtual environment)
 
