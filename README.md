@@ -102,6 +102,7 @@ pip install --upgrade tensorflow
 ```
 python -c "import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
 ```
+something like this should be returned: `tf.Tensor(-1402.6809, shape=(), dtype=float32)`
 
 ### install necessary packages
 
