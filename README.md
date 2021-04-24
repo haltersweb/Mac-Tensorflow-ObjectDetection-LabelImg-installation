@@ -49,7 +49,7 @@ When you see the name of the environment in parentheses at the front of the prom
 cd funEnv
 ```
 
-5. IMPORTANT: make sure to __update PIP and Homebrew__ before using them
+5. IMPORTANT: make sure to __update PIP and Homebrew__ before using them.  Brew update usually takes a while.  Go get some coffee while you wait.
 ```
 pip install --upgrade pip
 brew update
