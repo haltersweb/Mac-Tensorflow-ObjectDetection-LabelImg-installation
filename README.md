@@ -148,12 +148,12 @@ git clone https://github.com/tensorflow/models.git
 cd models/research
 ```
 
-6. Install protoc with Homebrew
+6. Install protobuf with Homebrew
 ```
 brew install protobuf
 ```
 
-7. Compile protos
+7. Compile protos using protoc
 ```
 protoc object_detection/protos/*.proto --python_out=.
 ```
