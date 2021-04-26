@@ -44,6 +44,19 @@ When you see the name of the environment in parentheses at the front of the prom
 (funEnv) [haltersweb]projects$
 ```
 
+### IMPORTANT: Is your venv (Python virtual environment) active?
+
+Are you having trouble with pip and python or defaulting to older versions of them? Are you unable to start Jupyter Notebook or run TensorFlow?
+
+That's usually a sign that you do not have your venv (Python virtual environment) active.
+
+Even opening a new terminal window will default to a deactivated venv state.  You need to activate venv on each terminal window if you are working in venv.  You will know it's active if the first thing you see in the terminal prompt is the name of the venv directory in parentheses:
+```
+(funEnv) [haltersweb]projects$
+```
+
+
+
 4. Navigate to your virtual environment
 ```
 cd funEnv
