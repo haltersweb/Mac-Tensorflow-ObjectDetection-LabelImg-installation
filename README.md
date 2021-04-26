@@ -14,7 +14,7 @@ I hope this will help those of you who who are on Mac OS and are struggling to s
 ## Assumptions
 
 * You are familiar with Terminal
-* You already have [Python3](https://www.python.org/) >= 3.8 installed
+* You already have [Python3](https://www.python.org/) >= 3.8 installed (I know some people are having trouble with 3.9)
 * You will be using a Python Virtual Environment
 * You are familiar with the [Jupyter Notebook IDE](https://jupyter.org/)
 * You have the latest versions of [PIP](https://pypi.org/project/pip/) and [Homebrew](https://brew.sh/)
@@ -30,7 +30,7 @@ mkdir projects
 cd projects
 ```
 
-2. Create a __virtual environment__ (this will also create a new directory).  We'll call it "funEnv".  You will also be sipulating the Python version to use (you can check it with `--version`).  I will be using Python 3.8.2.
+2. Create a __virtual environment__ (this will also create a new directory).  We'll call it "funEnv".  You will also be sipulating the Python version to use (you can check it with `--version`).  I will be using Python 3.8.2.  I have heard that some folks are having trouble with v3.9.
 ```
 python3.8 -m venv funEnv
 ```
