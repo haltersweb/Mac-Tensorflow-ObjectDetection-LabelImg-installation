@@ -22,7 +22,7 @@ I hope this will help those of you who who are on Mac OS and are struggling to s
 
 Coursera has an excellent [instruction video](https://www.coursera.org/lecture/python-project/how-to-install-jupyter-on-a-mac-optional-RCR8s) by the University of Michigan on installing Homebrew, Python3, spinning up a Python Virtual Environment, and installing Jupyter Notebook.
 
-## Step 1. Set up your Python virtual environment
+## Step 1. Set up your Python virtual environment with venv
 
 These instructions assume you already have Python 3.8 installed.  (If you don't have Python 3.8 installed here is a video that tells you how to [install particular Python versions using pyenv](https://www.youtube.com/watch?v=-5vd5GEpF-w).)
 
