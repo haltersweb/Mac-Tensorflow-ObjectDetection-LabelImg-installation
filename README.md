@@ -32,7 +32,7 @@ mkdir projects
 cd projects
 ```
 
-2. Create a __virtual environment__ (this will also create a new directory).  We'll call it "funEnv".  You will also be sipulating the Python version to use (you can check it with `--version`).  I will be using Python 3.8.2.  I have heard that some folks are having trouble with v3.9.
+2. Create a __virtual environment__ (this will also create a new directory).  We'll call it "funEnv".  You will also be sipulating the Python version to use (you can check it with `--version`).  I will be using Python 3.8.2. (as of this writing, TF is not compatible with 3.9)
 ```
 python3.8 -m venv funEnv
 ```
