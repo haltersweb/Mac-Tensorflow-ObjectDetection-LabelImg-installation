@@ -230,7 +230,7 @@ pipenv run make qt5py3
 
 1. Start the LabelImg application
 ```
-pipenv run python3 labelImg.py
+pipenv run python labelImg.py
 ```
 
 ## Putting it all together
