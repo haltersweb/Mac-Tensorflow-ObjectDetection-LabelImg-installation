@@ -24,6 +24,8 @@ Coursera has an excellent [instruction video](https://www.coursera.org/lecture/p
 
 ## Step 1. Set up your Python virtual environment
 
+If you don't have Python 3.8 installed here is a video that tells you [how to install particular Python versions using pyenv]{https://www.youtube.com/watch?v=-5vd5GEpF-w}.
+
 1. In terminal, __create__ a directory to hold your Python virtual environment(s) and then navigate to it.  We'll call ours "projects".
 ```
 mkdir projects
