@@ -14,7 +14,7 @@ I hope this will help those of you who who are on Mac OS and are struggling to s
 ## Assumptions
 
 * You are familiar with Terminal
-* You already have [Python3.8](https://www.python.org/) installed (as of this writing, TF is not compatible with 3.9)
+* You already have [Python 3.8](https://www.python.org/) installed (as of this writing, TF is not compatible with 3.9)
 * You will be using a Python Virtual Environment
 * You are familiar with the [Jupyter Notebook IDE](https://jupyter.org/)
 * You have the latest versions of [PIP](https://pypi.org/project/pip/) and [Homebrew](https://brew.sh/)
