@@ -57,7 +57,7 @@ C:\Users\Sally_Sue\python_versions\3.8.10\python -m venv funEnv
 ```
 funEnv\Scripts\activate
 ```
-(__NOTE:__ if you are using Git Bash the command will match the Mac instructions, namely: `source funEnv/Scripts/activate`)
+(__NOTE:__ if you are using Git Bash the activation command will match the Mac instructions instead, namely: `source funEnv/Scripts/activate`)
 
 When you see the name of the environment in parentheses at the front of the prompt you know it is active.  For example:
 ```
