@@ -127,143 +127,15 @@ jupyter notebook
 
 FYI: To __end the Jupyter session__ use `CTRL-C` and confirm.
 
-## Step 3. Installing TensorFlow 2 with pip (on virtual environment)
+## Step 3. Installing Visual C++ Build Tools
 
-For reference: https://www.tensorflow.org/install/pip and https://www.pyimagesearch.com/2019/12/09/how-to-install-tensorflow-2-0-on-macos/
+## Step 4. Cuda and CudNN to leverage your GPU
 
-1. Ensure the virtual environment is active
-2. Navigate to the virtual environment folder
-3. Update pip
-```
-pip install --upgrade pip
-```
+## Step 5. Installing TensorFlow 2 with pip (on virtual environment)
 
-4. Install TensorFlow 2
-```
-pip install --upgrade tensorflow
-```
+## Step 6. Installing Object Detection API with pip and brew
 
-5. Confirm the install was successful
-```
-python -c "import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
-```
-something like this should be returned: `tf.Tensor(-1402.6809, shape=(), dtype=float32)`
-
-### install necessary packages
-
-No need to install __numpy__ and __keras__ since they are installed when installing TF2
-
-1. Make sure the latest __Xcode__ is installed (thru the App Store)
-2. Install image processing libraries
-```
-pip install opencv-contrib-python
-pip install scikit-image
-pip install pillow
-pip install imutils
-```
-
-3. Install ML and support libraries
-```
-pip install scikit-learn
-pip install matplotlib
-pip install progressbar2
-pip install beautifulsoup4
-pip install pandas
-```
-
-## Step 4. Installing Object Detection API with pip and brew
-
-For reference: https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md and https://www.tensorflow.org/hub/build_from_source#install_protoc
-
-
-1. Ensure the virtual environment is active
-2. Navigate to the virtual environment folder
-3. Make sure Homebrew is also up to date
-```
-brew update
-```
-
-4. Clone the TF2 models repository. This installs a models directory in the virtual environment root directory.
-```
-git clone https://github.com/tensorflow/models.git
-```
-
-5. Navigate to the models research directory
-```
-cd models/research
-```
-
-6. Install protobuf with Homebrew
-```
-brew install protobuf
-```
-
-7. Compile protos using protoc
-```
-protoc object_detection/protos/*.proto --python_out=.
-```
-
-8. Copy setup file from object detection packages into current directory
-```
-cp object_detection/packages/tf2/setup.py .
-```
-
-9. Install all dependencies neede for our object detection library (ignore warnings)
-```
-python -m pip install --use-feature=2020-resolver .
-```
-
-10. Confirm installation was successful
-```
-python object_detection/builders/model_builder_tf2_test.py
-```
-It should result in something like:
-```
-Ran 21 tests in 27.946s
-OK (skipped=1)
-```
-
-## Step 5. Installing LabelImg
-
-Use LabelImg __to prepare images__ you want to use for training data.  Watch [Nicholas Renotte's "Real Time Face Mask Detection" video](https://youtu.be/IOI0o3Cxv9Q) to see how he uses LabelImg to prep his training data.
-
-I installed LabelImg from [tzutalin's version of LabelImg on GitHub](https://github.com/tzutalin/labelImg) since [Douglas Meneghetti](https://douglasrizzo.com.br/tf-obj-tutorial/) mentioned it's better than the version you can install with pip.
-
-I am following the Mac instructions from [tzutalin's LabelImg GitHub page](https://github.com/tzutalin/labelImg#user-content-macos) for "Python 3 Virtualenv"
-
-### download LabelImg from GitHub
-
-1. Ensure the virtual environment is active
-2. Navigate to the virtual environment folder
-3. Clone Tzutalin's LabelImg version
-```
-git clone https://github.com/tzutalin/labelImg.git
-```
-
-### build the application with pipenv
-
-1. Navigate to the LabelImg directory
-```
-cd labelImg
-```
-
-2. Install pipenv for better dependency management
-```
-pip install pipenv
-```
-
-3. Build labelImg
-```
-pipenv run pip install pyqt5 lxml
-pipenv run make qt5py3
-```
-
-### run labelImg
-
-1. Start the LabelImg application
-```
-pipenv run python labelImg.py
-```
+## Step 7. Installing LabelImg
 
 ## Putting it all together
 If you are new to TensorFlow, or even machine learning in general take a look at the following resources:
