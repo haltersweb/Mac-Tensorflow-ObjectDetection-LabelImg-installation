@@ -69,10 +69,9 @@ When you see the name of the environment in parentheses at the front of the prom
 cd funEnv
 ```
 
-5. IMPORTANT: make sure to __update PIP and Homebrew__ before using them.  Brew update usually takes a while.  Go get some coffee while you wait.
+5. IMPORTANT: make sure to __update PIP__ before using it.
 ```
-pip install --upgrade pip
-brew update
+python -m pip install --upgrade pip
 ```
 
 FYI: To __deactivate__ your virtual Python environment just type:
@@ -94,11 +93,25 @@ Even opening a new terminal window will default to a deactivated venv state.  Yo
 ## Step 2. Install Jupyter Notebook IDE
 
 1. Ensure the virtual environment is active.
-2. Navigate to the virtual environment folder.
-3. You will use `pip install notebook`.  This is the up-to-date Jupyter Notebook.  DO NOT USE `pip install jupyter`.
+3. Navigate to the virtual environment folder.
+4. Make sure pip is up to date
+5. Install Jupyter Notebook
 ```
-pip install notebook
+python -m pip install jupyter
 ```
+
+7. Install Python Kernel.
+```
+pip install ipykernel
+```
+
+6. Add your virtual environment to the Python Kernel and give it a name.  I'll call mine `funEnv_j`
+```
+python -m ipykernel install --user --name=funEnv_j
+```
+
+7. When creating a new python file, choose the Python Kernel you created to ensure you are using the correct Python version that matches your virtual environment.
+![image](https://user-images.githubusercontent.com/1916488/119246532-5f904400-bb50-11eb-9595-f0e2703ebba9.png)
 
 ### Starting Jupyter Notebook
 
@@ -109,7 +122,8 @@ pip install notebook
 jupyter notebook
 ```
 
-4. Copy the url from terminal and paste it into your browser. This runs an instance of Jupyter Notebook on localhost.
+4. If it doesn't launch automatically, copy the url from your shell and paste it into your browser. This runs an instance of Jupyter Notebook on localhost.
+5. Remember to choose the Python Kernel you created for your virtual environment when starting a new Python file.
 
 FYI: To __end the Jupyter session__ use `CTRL-C` and confirm.
 
