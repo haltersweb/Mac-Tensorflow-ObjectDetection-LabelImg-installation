@@ -1,49 +1,69 @@
-# Install TensorFlow 2, Object Detection, and LabelImg on Mac OS
+# Install TensorFlow 2, Object Detection, and LabelImg on PC
 
-This is how I set up my Mac to do ML object detection.
+I initially created this GitHub repository to document how I set up my environment my Mac.  But my daughter has a PC and wanted to play with TensorFlow as well.  This is how I set up my daughter's PC to do ML object detection.
 
-There are certain steps that are different between PC and Mac.  When I tried to follow instructions by folks who were using PCs for setting up TensorFlow 2 (TF2), Object Detection, etc. I would end up with errors.
-
-I hope this will help those of you who who are on Mac OS and are struggling to set up your learning environment.
-
-* I am using a 2017 Macbook Pro with Big Sur OS.
-* I have [Python](https://www.python.org/) 3.8.2 installed (at time of writing).
+* My daughter has a Windows 10 machine.
+* I will be using Python Virtual Environments.
 * I am using two package managers for this: [PIP](https://pypi.org/project/pip/) and [Homebrew](https://brew.sh/).
 * I am not using Conda.
 
 ## Assumptions
 
-* You are familiar with Terminal
-* You already have [Python 3.8](https://www.python.org/) installed (as of this writing, TF is not compatible with 3.9)
-* You will be using a Python Virtual Environment
+* You are familiar with shell applications such as Command Prompt or Git CMD (what I'm using). (__NOTE:__ If using Git Bash some of the commands will differ and line up more with Mac/Linux commands)
 * You are familiar with the [Jupyter Notebook IDE](https://jupyter.org/)
 * You have the latest versions of [PIP](https://pypi.org/project/pip/) and [Homebrew](https://brew.sh/)
 * You have the latest version of [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 
-Coursera has an excellent [instruction video](https://www.coursera.org/lecture/python-project/how-to-install-jupyter-on-a-mac-optional-RCR8s) by the University of Michigan on installing Homebrew, Python3, spinning up a Python Virtual Environment, and installing Jupyter Notebook.
+## Step 0. Install Python (set up your system for multiple Python versions and virtual environments)
+
+TensorFlow doesn't yet work with Python 3.9.  And it's best practice anyway to have different versions of Python on your machine and then pick one to build a virtual environment from.
+
+Python programmer has an excellent [instruction video](https://youtu.be/28eLP22SMTA) on installing multiple python versions using virtual environments.
+
+1. In a shell, __create__ a directory for various python versions.
+```
+mkdir python_versions
+```
+
+2. Within `python_versions` create a folder to hold the particular python release you will be installing.  She currently has Python 3.9.5 installed in a folder called `3.9.5`.  I will be creating a folder for [Python 3.8.10](https://www.python.org/downloads/release/python-3810/) for use with TensorFlow.
+```
+cd python_versions
+mkdir 3.8.10
+```
+
+3. Download the correct Windows Installer file (I'm using the [64-bit installer](https://www.python.org/ftp/python/3.8.10/python-3.8.10-amd64.exe)).  Then launch the installer.
+4. Do __NOT__ check the "Add Python 3.8 to PATH" option.  We will not need it when running virtual environments.
+5. Choose the __Customize Installation__ option rather than "Install Now".
+6. Use the default Optional Features.
+7. Add the "Precompile standard library" option to the selected Advanced Options. 
+8. Customize your install location by selecting your version directory to install your Python version into. For example: `C:\Users\sally_sue\python_versions\3.8.10`
 
 ## Step 1. Set up your Python virtual environment with venv
 
-These instructions assume you already have Python 3.8 installed.  (If you don't have Python 3.8 installed here is a video that tells you how to [install particular Python versions using pyenv](https://www.youtube.com/watch?v=-5vd5GEpF-w).)
+These instructions assume you now have Python 3.8 installed.  As a reminder, Python programmer has an excellent [instruction video](https://youtu.be/28eLP22SMTA) on installing multiple python versions using virtual environments.
 
-1. In terminal, __create__ a directory to hold your Python virtual environment(s) and then navigate to it.  We'll call ours "projects".
+1. In terminal, __create__ a directory to hold your Python virtual environment(s) and then navigate to it.  We'll call ours "python_projects".
 ```
-mkdir projects
-cd projects
+mkdir python_projects
+cd python_projects
 ```
 
-2. Create a __virtual environment__ (this will also create a new directory).  We'll call it "funEnv".  You will also be sipulating the Python version to use (you can check it with `--version`).  I will be using Python 3.8.2. (as of this writing, TF is not compatible with 3.9)
+2. Create a __virtual environment__ (this will also create a new directory).  We'll call it "funEnv".  You will also be sipulating the Python version to use (you can check it with `--version`).  I will be using Python 3.8.10. (as of this writing, TF is not compatible with 3.9)
 ```
-python3.8 -m venv funEnv
+C:\Users\Sally_Sue\python_versions\3.8.10\python -m venv funEnv
 ```
 
 3. __Activate__ your virtual python environment.  We'll call ours "funEnv"
 ```
-source funEnv/bin/activate
+funEnv\Scripts\activate
+```
+(__NOTE:__ if you are using Git Bash the command will match the Mac instructions, namely:
+```
+source funEnv/Scripts/activate
 ```
 When you see the name of the environment in parentheses at the front of the prompt you know it is active.  For example:
 ```
-(funEnv) [haltersweb]projects$
+(funEnv) [sally_sue]python_projects$
 ```
 
 4. Navigate to your virtual environment
@@ -70,7 +90,7 @@ That's usually a sign that your venv (Python virtual environment) is inactive.
 
 Even opening a new terminal window will default to a deactivated venv state.  You need to activate venv on each terminal window if you are working in venv.  You will know it's active if the first thing you see in the terminal prompt is the name of the venv directory in parentheses:
 ```
-(funEnv) [haltersweb]projects$
+(funEnv) [sally_sue]python_projects$
 ```
 
 ## Step 2. Install Jupyter Notebook IDE
