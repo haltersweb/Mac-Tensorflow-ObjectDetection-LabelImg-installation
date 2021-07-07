@@ -12,7 +12,6 @@ I initially created this GitHub repository to document how I set up my environme
 * You are familiar with shell applications such as Command Prompt or Git CMD (what I'm using). (__NOTE:__ If using Git Bash some of the commands will differ and line up more with Mac/Linux commands)
 * You are familiar with the [Jupyter Notebook IDE](https://jupyter.org/)
 * You have the latest versions of [PIP](https://pypi.org/project/pip/) and [Homebrew](https://brew.sh/)
-* You have the latest version of [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 
 ## Step 0. Install Python (set up your system for multiple Python versions and virtual environments)
 
