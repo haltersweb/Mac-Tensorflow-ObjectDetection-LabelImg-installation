@@ -34,8 +34,9 @@ cd projects
 
 2. Create a __virtual environment__ (this will also create a new directory).  We'll call it "funEnv".  You will also be sipulating the Python version to use (you can check it with `--version`).  I will be using Python 3.8.2. (as of this writing, TF is not compatible with 3.9)
 ```
-python3.8 -m venv funEnv
+/your/python/file/path/python -m venv funEnv
 ```
+NOTE: if 3.8.2 is the default version on your system, you could just use the aliases `python` or `python3.8` instead of the python file path
 
 3. __Activate__ your virtual python environment.  We'll call ours "funEnv"
 ```
