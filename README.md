@@ -7,7 +7,7 @@ There are certain steps that are different between PC and Mac.  When I tried to 
 I hope this will help those of you who who are on Mac OS and are struggling to set up your learning environment.
 
 * I am using a 2017 Macbook Pro with Big Sur OS.
-* I have [Python](https://www.python.org/) 3.8.2 installed (at time of writing).
+* I have [Python](https://www.python.org/){:target="_blank"} 3.8.2 installed (at time of writing).
 * I am using two package managers for this: [PIP](https://pypi.org/project/pip/) and [Homebrew](https://brew.sh/).
 * I am not using Conda.
 
