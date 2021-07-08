@@ -223,7 +223,7 @@ pip install pipenv
 
 3. Build labelImg
 ```
-pipenv run pip install pyqt5 lxml
+pipenv run pip install pyqt5==5.12.1 lxml
 pipenv run make qt5py3
 ```
 
