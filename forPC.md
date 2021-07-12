@@ -145,8 +145,10 @@ jupyter notebook
 
 FYI: To __end the Jupyter session__ use `CTRL-C` and confirm.
 
+## Step 3. Installing Tensorflow Object Detection
 
- 
+1. https://github.com/tensorflow/models
+2. 
 
 
 ## Step 5. Installing TensorFlow 2 with pip (on virtual environment)
