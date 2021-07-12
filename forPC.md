@@ -21,10 +21,14 @@ Follow [Nicholas Renotte's Tensorflow Object Detection YouTube tutorial](https:/
 
 * [Microsoft Visual C++ Build Tools](https://visualstudio.microsoft.com/vs/community)
 
-If you have an NVIDIA GPU, then using CUDA and CUDNN to leverage your NVIDIA GPU when training will speed up your training immensely. Make sure you are using the correct versions of CUDA and CUDNN:
+If you have an NVIDIA GPU, then using CUDA and CUDNN to leverage your NVIDIA GPU when training will speed up your training immensely. Make sure you are using the correct versions of CUDA and CUDNN. Ensure the right CUDA and CUDNN at https://www.tensorflow.org/install/source_windows#cpu.
+
+Since I am using 
 
 * [CUDA 10.1](https://developer.nvidia.com/cuda-10.1-download-archive-base)
 * [CUDNN 7.6.5](https://developer.nvidia.com/rdp/cudnn-archive)
+
+
 
 Google's protocol buffers are a language- and platform-neutral method for serializing structured data.  Tensorflow uses this format.  Protoc is the tool to be used with protocol buffers. Learn more on [Google's protocol buffers page](https://developers.google.com/protocol-buffers)
 
