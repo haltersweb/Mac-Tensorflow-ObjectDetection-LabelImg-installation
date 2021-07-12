@@ -4,7 +4,7 @@ I initially created this GitHub repository to document how I set up my environme
 
 I am following [Nicholas Renotte's Tensorflow Object Detection YouTube tutorial](https://youtu.be/dZh_ps8gKgs) for much of these instructions.
 
-* My daughter has a Windows 10 machine.
+* My daughter has a 64-bit Windows 10 machine.
 * I will be using Python Virtual Environments.
 * I am using two package managers for this: [PIP](https://pypi.org/project/pip/) and [Homebrew](https://brew.sh/).
 * I am not using Conda.
@@ -141,6 +141,12 @@ FYI: To __end the Jupyter session__ use `CTRL-C` and confirm.
 
 ## Step 3. Installing Protoc
 
+Google's protocol buffers are a language- and platform-neutral method for serializing structured data.  Tensorflow uses this format.  Protoc is the tool to be used with protocol buffers.
+
+Learn more on [Google's protocol buffers page](https://developers.google.com/protocol-buffers)
+
+1. Find the correct protoc file at https://github.com/protocolbuffers/protobuf/releases (```protoc-3.17.3-win64.zip```)
+2. 
 
 
 ## Step 5. Installing TensorFlow 2 with pip (on virtual environment)
