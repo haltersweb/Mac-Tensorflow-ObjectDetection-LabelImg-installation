@@ -149,7 +149,7 @@ FYI: To __end the Jupyter session__ use `CTRL-C` and confirm.
 
 1. Clone https://github.com/tensorflow/models repo
 ```
-clone https://github.com/tensorflow/models.git
+git clone https://github.com/tensorflow/models.git
 ```
 
 
