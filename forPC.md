@@ -21,7 +21,7 @@ Follow [Nicholas Renotte's Tensorflow Object Detection YouTube tutorial](https:/
 
 * [Microsoft Visual C++ Build Tools](https://visualstudio.microsoft.com/vs/community)
 
-If you have an NVIDIA GPU, then using CUDA and CUDNN to leverage your NVIDIA GPU when training will speed up your training immensely. Make sure you are using the correct versions of CUDA and CUDNN. Ensure the right CUDA and CUDNN at https://www.tensorflow.org/install/source_windows#cpu.
+If you have an NVIDIA GPU, then using CUDA and CUDNN to leverage your NVIDIA GPU when training will speed up your training immensely. Make sure you are using the correct versions of CUDA and CUDNN. Ensure the right CUDA and CUDNN at https://www.tensorflow.org/install/source_windows#gpu.
 
 Since I am using 
 
