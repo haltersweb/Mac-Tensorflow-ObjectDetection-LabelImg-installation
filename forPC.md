@@ -147,11 +147,19 @@ FYI: To __end the Jupyter session__ use `CTRL-C` and confirm.
 
 ## Step 3. Installing Tensorflow Object Detection
 
-1. Clone https://github.com/tensorflow/models repo
+1. Ensure the virtual environment is active
+2. Navigate to the virtual environment folder
+3. Clone https://github.com/tensorflow/models repo
 ```
 git clone https://github.com/tensorflow/models.git
 ```
 
+4. Navigate to models > research
+```
+cd models\research
+```
+
+5. 
 
 
 ## Step 5. Installing TensorFlow 2 with pip (on virtual environment)
