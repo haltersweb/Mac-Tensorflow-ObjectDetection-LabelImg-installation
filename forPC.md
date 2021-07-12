@@ -26,6 +26,12 @@ If you have an NVIDIA GPU, then using CUDA and CUDNN to leverage your NVIDIA GPU
 * [CUDA 10.1](https://developer.nvidia.com/cuda-10.1-download-archive-base)
 * [CUDNN 7.6.5](https://developer.nvidia.com/rdp/cudnn-archive)
 
+Google's protocol buffers are a language- and platform-neutral method for serializing structured data.  Tensorflow uses this format.  Protoc is the tool to be used with protocol buffers. Learn more on [Google's protocol buffers page](https://developers.google.com/protocol-buffers)
+
+* [Protobuf](https://github.com/protocolbuffers/protobuf/releases)
+
+Remember to follow [Nicholas Renotte's Tensorflow Object Detection YouTube tutorial](https://youtu.be/dZh_ps8gKgs?t=351) for a step-by-step instructions since there are a lot of intricacies in these installations.
+
 ## Step 0. Install Python (set up your system for multiple Python versions and virtual environments)
 
 TensorFlow doesn't yet work with Python 3.9.  And it's best practice anyway to have different versions of Python on your machine and then pick one to build a virtual environment from.
@@ -139,14 +145,8 @@ jupyter notebook
 
 FYI: To __end the Jupyter session__ use `CTRL-C` and confirm.
 
-## Step 3. Installing Protoc
 
-Google's protocol buffers are a language- and platform-neutral method for serializing structured data.  Tensorflow uses this format.  Protoc is the tool to be used with protocol buffers.
-
-Learn more on [Google's protocol buffers page](https://developers.google.com/protocol-buffers)
-
-1. Find the correct protoc file at https://github.com/protocolbuffers/protobuf/releases (```protoc-3.17.3-win64.zip```)
-2. 
+ 
 
 
 ## Step 5. Installing TensorFlow 2 with pip (on virtual environment)
