@@ -2,6 +2,8 @@
 
 I initially created this GitHub repository to document how I set up my environment my Mac.  But my daughter has a PC and wanted to play with TensorFlow as well.  This is how I set up my daughter's PC to do ML object detection.
 
+I am following [Nicholas Renotte's Tensorflow Object Detection YouTube tutorial](https://youtu.be/dZh_ps8gKgs) for much of these instructions.
+
 * My daughter has a Windows 10 machine.
 * I will be using Python Virtual Environments.
 * I am using two package managers for this: [PIP](https://pypi.org/project/pip/) and [Homebrew](https://brew.sh/).
@@ -128,7 +130,17 @@ FYI: To __end the Jupyter session__ use `CTRL-C` and confirm.
 
 ## Step 3. Installing Visual C++ Build Tools
 
-## Step 4. Cuda and CudNN to leverage your GPU
+1. Download Visual Studio from: [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/)
+2. Run the exe file.  This will install the __Visual Studio installer__, not Visual Studio itself.
+3. Select __Desktop Development with C++__ (keep defaults) and click install.
+
+## Step 4. CUDA and CUDNN to leverage your GPU
+
+This is optional but leveraging your NVIDIA GPU will speed up your training immensely.
+
+Make sure you are using the correct versions of CUDA and CUDNN:
+* [CUDA 10.1](https://developer.nvidia.com/cuda-10.1-download-archive-base)
+* [CUDNN 7.6.5](https://developer.nvidia.com/rdp/cudnn-archive)
 
 ## Step 5. Installing TensorFlow 2 with pip (on virtual environment)
 
