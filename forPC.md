@@ -9,11 +9,22 @@ I am following [Nicholas Renotte's Tensorflow Object Detection YouTube tutorial]
 * I am using two package managers for this: [PIP](https://pypi.org/project/pip/) and [Homebrew](https://brew.sh/).
 * I am not using Conda.
 
-## Assumptions
+### Assumptions
 
 * You are familiar with shell applications such as Command Prompt or Git CMD (what I'm using). (__NOTE:__ If using Git Bash some of the commands will differ and line up more with Mac/Linux commands)
 * You are familiar with the [Jupyter Notebook IDE](https://jupyter.org/)
 * You have the latest versions of [PIP](https://pypi.org/project/pip/) and [Homebrew](https://brew.sh/)
+
+### Dependencies
+
+Follow [Nicholas Renotte's Tensorflow Object Detection YouTube tutorial](https://youtu.be/dZh_ps8gKgs?t=351) for a step-by-step to install these dependencies.
+
+* [Microsoft Visual C++ Build Tools](https://visualstudio.microsoft.com/vs/community)
+
+If you have an NVIDIA GPU, then using CUDA and CUDNN to leverage your NVIDIA GPU when training will speed up your training immensely. Make sure you are using the correct versions of CUDA and CUDNN:
+
+* [CUDA 10.1](https://developer.nvidia.com/cuda-10.1-download-archive-base)
+* [CUDNN 7.6.5](https://developer.nvidia.com/rdp/cudnn-archive)
 
 ## Step 0. Install Python (set up your system for multiple Python versions and virtual environments)
 
@@ -128,19 +139,9 @@ jupyter notebook
 
 FYI: To __end the Jupyter session__ use `CTRL-C` and confirm.
 
-## Step 3. Installing Visual C++ Build Tools
+## Step 3. Installing Protoc
 
-1. Download Visual Studio from: [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/)
-2. Run the exe file.  This will install the __Visual Studio installer__, not Visual Studio itself.
-3. Select __Desktop Development with C++__ (keep defaults) and click install.
 
-## Step 4. CUDA and CUDNN to leverage your GPU
-
-This is optional but leveraging your NVIDIA GPU will speed up your training immensely.
-
-Make sure you are using the correct versions of CUDA and CUDNN:
-* [CUDA 10.1](https://developer.nvidia.com/cuda-10.1-download-archive-base)
-* [CUDNN 7.6.5](https://developer.nvidia.com/rdp/cudnn-archive)
 
 ## Step 5. Installing TensorFlow 2 with pip (on virtual environment)
 
