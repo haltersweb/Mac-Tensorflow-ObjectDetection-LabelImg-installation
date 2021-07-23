@@ -7,7 +7,7 @@ There are certain steps that are different between PC and Mac.  When I tried to 
 I hope this will help those of you who who are on Mac OS and are struggling to set up your learning environment.
 
 * I am using a 2017 Macbook Pro with Big Sur OS.
-* I have [Python](https://www.python.org/) 3.8.2 installed (at time of writing).
+* I have [Python](https://www.python.org/) 3.8.10 installed (at time of writing).
 * I am using two package managers for this: [PIP](https://pypi.org/project/pip/) and [Homebrew](https://brew.sh/).
 * I am not using Conda.
 
@@ -22,6 +22,62 @@ I hope this will help those of you who who are on Mac OS and are struggling to s
 
 Coursera has an excellent [instruction video](https://www.coursera.org/lecture/python-project/how-to-install-jupyter-on-a-mac-optional-RCR8s) by the University of Michigan on installing Homebrew, Python3, spinning up a Python Virtual Environment, and installing Jupyter Notebook.
 
+## Step 0. Setting up different Python versions with pyenv (in case you don't have python installed yet)
+
+__pyenv__ is used to install different major and minor releases of Python.
+
+(Instructions: https://youtu.be/-5vd5GEpF-w)
+(GitHub for pyenv: https://github.com/pyenv/pyenv)
+
+### Install pyenv with Homebrew:
+
+1. Update Homebrew.  Brew update usually takes a while.  Go get some coffee while you wait.
+```
+brew update
+```
+
+2. Install pyenv
+```
+brew install pyenv
+```
+
+### Configure terminal so that it always loads pyenv whenever we start a new terminal instance
+
+1. Find out what file changes you need to make for your particular MacOS by typing:
+```
+pyenv init
+```
+2. Make any stipulated changes using command-line text editor such as Vim or Nano
+
+For example, I am on BigSur OS.  ```pyenv init``` instructed me to add 3 lines to ```.profile``` and to ```.zprofile``` and then to append ```eval "$(pyenv init -)"``` into ```zshrc``` (the zsh config file). Earlier OS may use bin instead of zsh.
+
+(BTW, later if you don't want pyenv to manage its Python versions, comment out the eval line in the .zshrc file. That way python --version = 2.7 (system version) and python3 = whatever version you may have installed without pyenv)
+
+### Install a python version
+
+1. To see a full list of every Python version you can install by typing:
+```
+pyenv install --list
+
+```
+Besides regular Python versions you can even install anaconda versions and others.
+
+2. Install version(s). For example let's install 3.8.9 and 3.9.4:
+```
+pyenv install 3.9.4
+pyenv install 3.8.9
+```
+
+3. View the list of installed versions
+```
+pyenv versions
+```
+
+4. Choose your default version by modifying the ```~/.pyenv/version``` text file (for example 3.8.9)
+```
+echo 3.8.9 > ~/.pyenv/version
+```
+
 ## Step 1. Set up your Python virtual environment with venv
 
 These instructions assume you already have Python 3.8 installed.  (If you don't have Python 3.8 installed here is a video that tells you how to [install particular Python versions using pyenv](https://www.youtube.com/watch?v=-5vd5GEpF-w).)
@@ -32,11 +88,11 @@ mkdir projects
 cd projects
 ```
 
-2. Create a __virtual environment__ (this will also create a new directory).  We'll call it "funEnv".  You will also be sipulating the Python version to use (you can check it with `--version`).  I will be using Python 3.8.2. (as of this writing, TF is not compatible with 3.9)
+2. Create a __virtual environment__ (this will also create a new directory).  We'll call it "funEnv".  You will also be sipulating the Python version to use (you can check it with `--version`).  I will be using Python 3.8.10. (as of this writing, TF is not compatible with 3.9)
 ```
 /your/python/file/path/python -m venv funEnv
 ```
-NOTE: if 3.8.2 is the default version on your system, you could just use the aliases `python` or `python3.8` instead of the python file path
+NOTE: if 3.8.10 is the default version on your system, you could just use the aliases `python` or `python3.8` instead of the python file path
 
 3. __Activate__ your virtual python environment.  We'll call ours "funEnv"
 ```
