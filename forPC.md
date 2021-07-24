@@ -195,7 +195,8 @@ Use pip to install any of the packages below that weren't listed
 * progressbar2
 * beautifulsoup4
 * pandas
-```pip install <package name>
+```
+pip install <package name>
 ```
 
 ## Step 4. Installing Tensorflow Object Detection
