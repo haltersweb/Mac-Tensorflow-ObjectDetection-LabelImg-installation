@@ -49,7 +49,7 @@ pyenv init
 ```
 2. Make any stipulated changes using command-line text editor such as Vim or Nano
 
-For example, I am on BigSur OS.  ```pyenv init``` instructed me to add 3 lines to ```.profile``` and to ```.zprofile``` and then to append ```eval "$(pyenv init -)"``` into ```zshrc``` (the zsh config file). Earlier OS may use bin instead of zsh.
+For example, I am on BigSur OS.  `pyenv init` instructed me to add 3 lines to `.profile` and to `.zprofile` and then to append `eval "$(pyenv init -)"` into `zshrc` (the zsh config file). Earlier OS may use bin instead of zsh.
 
 (BTW, later if you don't want pyenv to manage its Python versions, comment out the eval line in the .zshrc file. That way python --version = 2.7 (system version) and python3 = whatever version you may have installed without pyenv)
 
@@ -73,7 +73,7 @@ pyenv install 3.8.9
 pyenv versions
 ```
 
-4. Choose your default version by modifying the ```~/.pyenv/version``` text file (for example 3.8.9)
+4. Choose your default version by modifying the `~/.pyenv/version` text file (for example 3.8.9)
 ```
 echo 3.8.9 > ~/.pyenv/version
 ```
