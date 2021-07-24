@@ -6,6 +6,7 @@ I am following [Nicholas Renotte's Tensorflow Object Detection YouTube tutorial]
 
 * My daughter has a 64-bit Windows 10 machine.
 * I will be using Python Virtual Environments.
+* I am using [Git](https://git-scm.com/downloads) version controller
 * I am using two package managers for this: [PIP](https://pypi.org/project/pip/) and [Homebrew](https://brew.sh/).
 * I am not using Conda.
 
@@ -203,7 +204,7 @@ pip install <package name>
 
 1. Ensure the virtual environment is active
 2. Navigate to the virtual environment folder
-3. Clone https://github.com/tensorflow/models repo
+3. Clone the [Tensorflow Model Garden](https://github.com/tensorflow/models).  This installs a models directory in the virtual environment root directory.
 ```
 git clone https://github.com/tensorflow/models.git
 ```
@@ -213,8 +214,28 @@ git clone https://github.com/tensorflow/models.git
 cd models\research
 ```
 
-5. 
+5. Compile protos using protoc
+```
+protoc object_detection/protos/*.proto --python_out=.
+```
+6. Copy setup file from object detection packages into current directory
+```
+cp object_detection/packages/tf2/setup.py .
+```
+7. Install all dependencies needed for our object detection library (ignore warnings)
 
+
+
+
+
+
+python -m pip install --use-feature=2020-resolver .
+Confirm installation was successful
+python object_detection/builders/model_builder_tf2_test.py
+It should result in something like:
+
+Ran 21 tests in 27.946s
+OK (skipped=1)
 
 
 
