@@ -161,7 +161,7 @@ pip install --upgrade pip
 4. Make sure all dependencies are installed (see the section on dependencies at the top of this document)
 5. Enable Win32 long paths in the Local Group Policy Editor
 
-You will find the option in ```Local Computer Policy > Computer Configuration > Administrative Templates > System > Filesystem```
+You will find the option in `Local Computer Policy > Computer Configuration > Administrative Templates > System > Filesystem`
 
 For more information follow the instructions For Windows 10 given in StackExchange: https://superuser.com/questions/1119883/windows-10-enable-ntfs-long-paths-policy-option-missing
 
@@ -175,7 +175,7 @@ pip install --upgrade tensorflow
 python -c "import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
 ```
 
-something like this should be returned: ```tf.Tensor(-1402.6809, shape=(), dtype=float32)```
+something like this should be returned: `tf.Tensor(-1402.6809, shape=(), dtype=float32)`
 
 8. install necessary packages
 
