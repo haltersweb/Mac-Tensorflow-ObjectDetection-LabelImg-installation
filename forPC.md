@@ -183,7 +183,7 @@ View the current list of packages installed within the virtual environment:
 ```
 pip list
 ```
-use ```pip install <package name>``` to install any of the below packages that aren't listed 
+Use pip to install any of the packages below that weren't listed 
 * numpy
 * keras
 * opencv-contrib-python
@@ -195,6 +195,8 @@ use ```pip install <package name>``` to install any of the below packages that a
 * progressbar2
 * beautifulsoup4
 * pandas
+```pip install <package name>
+```
 
 ## Step 4. Installing Tensorflow Object Detection
 
