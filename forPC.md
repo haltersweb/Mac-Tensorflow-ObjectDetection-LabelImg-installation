@@ -28,8 +28,6 @@ Since I am using
 * [CUDA 10.1](https://developer.nvidia.com/cuda-10.1-download-archive-base)
 * [CUDNN 7.6.5](https://developer.nvidia.com/rdp/cudnn-archive)
 
-
-
 Google's protocol buffers are a language- and platform-neutral method for serializing structured data.  Tensorflow uses this format.  Protoc is the tool to be used with protocol buffers. Learn more on [Google's protocol buffers page](https://developers.google.com/protocol-buffers)
 
 * [Protobuf](https://github.com/protocolbuffers/protobuf/releases)
@@ -149,7 +147,56 @@ jupyter notebook
 
 FYI: To __end the Jupyter session__ use `CTRL-C` and confirm.
 
-## Step 3. Installing Tensorflow Object Detection
+## Step 3. Installing TensorFlow 2 with pip (on virtual environment)
+
+For reference: https://www.tensorflow.org/install
+
+1. Ensure the virtual environment is active
+2. Navigate to the virtual environment folder
+3. Update pip
+```
+pip install --upgrade pip
+```
+
+4. Make sure all dependencies are installed (see the section on dependencies at the top of this document)
+5. Enable Win32 long paths in the Local Group Policy Editor
+
+You will find the option in ```Local Computer Policy > Computer Configuration > Administrative Templates > System > Filesystem```
+
+For more information follow the instructions For Windows 10 given in StackExchange: https://superuser.com/questions/1119883/windows-10-enable-ntfs-long-paths-policy-option-missing
+
+6. Install TensorFlow 2
+```
+pip install --upgrade tensorflow
+```
+
+7. Confirm the install was successful
+```
+python -c "import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+```
+
+something like this should be returned: ```tf.Tensor(-1402.6809, shape=(), dtype=float32)```
+
+8. install necessary packages
+
+View the current list of packages installed within the virtual environment:
+```
+pip list
+```
+use ```pip install <package name>``` to install any of the below packages that aren't listed 
+* numpy
+* keras
+* opencv-contrib-python
+* scikit-image
+* pillow
+* imutils
+* scikit-learn
+* matplotlib
+* progressbar2
+* beautifulsoup4
+* pandas
+
+## Step 4. Installing Tensorflow Object Detection
 
 1. Ensure the virtual environment is active
 2. Navigate to the virtual environment folder
@@ -166,9 +213,7 @@ cd models\research
 5. 
 
 
-## Step 5. Installing TensorFlow 2 with pip (on virtual environment)
 
-## Step 6. Installing Object Detection API with pip and brew
 
 ## Step 7. Installing LabelImg
 
