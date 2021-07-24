@@ -208,7 +208,7 @@ For reference: https://github.com/tensorflow/models/blob/master/research/object_
 brew update
 ```
 
-4. Clone the TF2 models repository. This installs a models directory in the virtual environment root directory.
+4. Clone the [Tensorflow Model Garden](https://github.com/tensorflow/models.git). This installs a models directory in the virtual environment root directory.
 ```
 git clone https://github.com/tensorflow/models.git
 ```
