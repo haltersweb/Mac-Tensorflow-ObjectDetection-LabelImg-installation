@@ -232,7 +232,7 @@ copy object_detection\packages\tf2\setup.py .
 python -m pip install --use-feature=2020-resolver .
 ```
 
-8. Confirm installation was successful
+8. Confirm installation was successful (ignore CUDA and GPU warnings if you are not leveraging your GPU)
 ```
 python object_detection/builders/model_builder_tf2_test.py
 ```
