@@ -189,7 +189,7 @@ Use pip to install any of the packages below that weren't listed
 * beautifulsoup4
 * pandas
 ```
-pip install <package name>
+python -m pip install <package name>
 ```
 
 ## Step 4. Installing Tensorflow Object Detection
