@@ -18,7 +18,7 @@ I am following [Nicholas Renotte's Tensorflow Object Detection YouTube tutorial]
 
 ### Dependencies
 
-Follow [Nicholas Renotte's Tensorflow Object Detection YouTube tutorial](https://youtu.be/dZh_ps8gKgs?t=351) for a step-by-step to install these dependencies.
+__Follow [Nicholas Renotte's Tensorflow Object Detection YouTube tutorial](https://youtu.be/dZh_ps8gKgs?t=351)__ for a step-by-step to install these dependencies.
 
 #### MS Visual C++ Build Tools
 
