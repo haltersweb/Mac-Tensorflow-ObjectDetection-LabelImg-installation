@@ -159,7 +159,7 @@ https://www.thewindowsclub.com/wp-content/uploads/2021/07/change-values-in-DWORD
 
 ### Install TensorFlow 2
 ```
-pip install --upgrade tensorflow
+python -m pip install --upgrade tensorflow
 ```
 
 ### Confirm the install was successful
