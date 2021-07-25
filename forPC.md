@@ -225,7 +225,7 @@ protoc object_detection/protos/*.proto --python_out=.
 ```
 6. Copy setup file from object detection packages into current directory
 ```
-copy object_detection/packages/tf2/setup.py .
+copy object_detection\packages\tf2\setup.py .
 ```
 7. Install all dependencies needed for our object detection library (ignore warnings)
 ```
