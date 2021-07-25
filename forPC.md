@@ -116,37 +116,21 @@ Even opening a new terminal window will default to a deactivated venv state.  Yo
 1. Ensure the virtual environment is active.
 3. Navigate to the virtual environment folder.
 4. Make sure pip is up to date
-5. Install Jupyter Notebook
+5. Install [Jupyter Notebook](https://jupyter.org/install.html#installation-with-pip-1)
 ```
-python -m pip install jupyter
+python -m pip install notebook
 ```
-
-7. Install Python Kernel.
-```
-pip install ipykernel
-```
-
-6. Add your virtual environment to the Python Kernel and give it a name.  I'll call mine `funEnv_j`
-```
-python -m ipykernel install --user --name=funEnv_j
-```
-
-7. When creating a new python file, choose the Python Kernel you created to ensure you are using the correct Python version that matches your virtual environment.
-![image](https://user-images.githubusercontent.com/1916488/119246532-5f904400-bb50-11eb-9595-f0e2703ebba9.png)
 
 ### Starting Jupyter Notebook
 
-1. Ensure the virtual environment is active
-2. Navigate to the virtual environment folder
-3. Type `jupyter notebook` at the terminal prompt.
+Type `jupyter notebook` at the command line prompt.
 ```
 jupyter notebook
 ```
 
-4. If it doesn't launch automatically, copy the url from your shell and paste it into your browser. This runs an instance of Jupyter Notebook on localhost.
-5. Remember to choose the Python Kernel you created for your virtual environment when starting a new Python file.
+If it doesn't launch automatically, copy the url from your shell and paste it into your browser. This runs an instance of Jupyter Notebook on localhost.
 
-FYI: To __end the Jupyter session__ use `CTRL-C` and confirm.
+FYI: To __end the Jupyter session__ click the "Quit" button at the top right of the IDE interface.
 
 ## Step 3. Installing TensorFlow 2 with pip (on virtual environment)
 
