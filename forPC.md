@@ -20,14 +20,25 @@ I am following [Nicholas Renotte's Tensorflow Object Detection YouTube tutorial]
 
 Follow [Nicholas Renotte's Tensorflow Object Detection YouTube tutorial](https://youtu.be/dZh_ps8gKgs?t=351) for a step-by-step to install these dependencies.
 
+#### MS Visual C++ Build Tools
+
 * [Microsoft Visual C++ Build Tools](https://visualstudio.microsoft.com/vs/community)
 
-If you have an NVIDIA GPU, then using CUDA and CUDNN to leverage your NVIDIA GPU when training will speed up your training immensely. Make sure you are using the correct versions of CUDA and CUDNN. Ensure the right CUDA and CUDNN at https://www.tensorflow.org/install/source_windows#gpu.
+#### Leverage your GPU with CUDA and CUDNN
 
-Since I am using 
+Source: [CUDA Installation Guide for Microsoft Windows](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html)
+
+If you have an NVIDIA GPU, then you might be able to use CUDA and CUDNN to leverage your GPU when training.  This will speed up your training immensely.
+
+1. First check your Windows Device Manager against the [CUDA list of CUDA-capable GPUs](https://developer.nvidia.com/cuda-gpus).  (Open your device manager via command line with `devmgmt.msc`.)
+2. Choose the right CUDA and CUDNN to use based on TensorFlow version at https://www.tensorflow.org/install/source_windows#gpu.
+
+For example, if you are using TensorFlow 2.3.0 you would use:
 
 * [CUDA 10.1](https://developer.nvidia.com/cuda-10.1-download-archive-base)
 * [CUDNN 7.6.5](https://developer.nvidia.com/rdp/cudnn-archive)
+
+#### Protocol buffers
 
 Google's protocol buffers are a language- and platform-neutral method for serializing structured data.  Tensorflow uses this format.  Protoc is the tool to be used with protocol buffers. Learn more on [Google's protocol buffers page](https://developers.google.com/protocol-buffers)
 
