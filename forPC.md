@@ -288,7 +288,7 @@ pyrcc5 -o libs/resources.py resources.qrc
 
 ### run labelImg
 ```
-pipenv run python labelImg.py
+python labelImg.py
 ```
 
 ## Putting it all together
