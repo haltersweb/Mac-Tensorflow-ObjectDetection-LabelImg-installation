@@ -154,9 +154,9 @@ For reference: https://www.tensorflow.org/install
 
 1. Ensure the virtual environment is active
 2. Navigate to the virtual environment folder
-3. Update pip
+3. IMPORTANT: make sure to __update PIP__ before using it.
 ```
-pip install --upgrade pip
+python -m pip install --upgrade pip
 ```
 
 4. Make sure all dependencies are installed (see the section on dependencies at the top of this document)
@@ -202,6 +202,8 @@ pip install <package name>
 
 ## Step 4. Installing Tensorflow Object Detection
 
+Refer to the [Object Detection API with TensorFlow 2 installation instructions](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md)
+
 1. Ensure the virtual environment is active
 2. Navigate to the virtual environment folder
 3. Clone the [Tensorflow Model Garden](https://github.com/tensorflow/models).  This installs a models directory in the virtual environment root directory.
@@ -223,23 +225,71 @@ protoc object_detection/protos/*.proto --python_out=.
 cp object_detection/packages/tf2/setup.py .
 ```
 7. Install all dependencies needed for our object detection library (ignore warnings)
-
-
-
-
-
-
+```
 python -m pip install --use-feature=2020-resolver .
-Confirm installation was successful
-python object_detection/builders/model_builder_tf2_test.py
-It should result in something like:
+```
 
+8. Confirm installation was successful
+```
+python object_detection/builders/model_builder_tf2_test.py
+```
+
+It should result in something like:
+```
 Ran 21 tests in 27.946s
 OK (skipped=1)
+```
 
+If, instead you get a `ModuleNotFoundError`, install the module using `pip install` (see last part of Step 3)
 
+## Step 5. Installing LabelImg
 
-## Step 7. Installing LabelImg
+Use LabelImg __to prepare images__ you want to use for training data.  Watch [Nicholas Renotte's "Real Time Face Mask Detection" video](https://youtu.be/IOI0o3Cxv9Q) to see how he uses LabelImg to prep his training data.
+
+I installed LabelImg from [tzutalin's version of LabelImg on GitHub](https://github.com/tzutalin/labelImg) since [Douglas Meneghetti](https://douglasrizzo.com.br/tf-obj-tutorial/) mentioned it's better than the version you can install with pip.
+
+I am following the Mac instructions from [tzutalin's LabelImg GitHub page](https://github.com/tzutalin/labelImg#windows) for "Windows"
+
+### download LabelImg from GitHub
+
+1. Ensure the virtual environment is active
+2. Navigate to the virtual environment folder
+3. Clone Tzutalin's LabelImg version
+```
+git clone https://github.com/tzutalin/labelImg.git
+```
+
+### upgrade pip (if you haven't already)
+```
+python -m pip install --upgrade pip
+```
+
+### install dependencies
+
+1. Navigate to the LabelImg directory
+```
+cd labelImg
+```
+
+2. Install [PyQt5](https://www.riverbankcomputing.com/software/pyqt/download5)
+```
+pip install PyQt5
+```
+
+3. Install lxml
+```
+pip install lxml
+```
+
+### build the labelImg application
+```
+pyrcc5 -o libs/resources.py resources.qrc
+```
+
+### run labelImg
+```
+pipenv run python labelImg.py
+```
 
 ## Putting it all together
 If you are new to TensorFlow, or even machine learning in general take a look at the following resources:
