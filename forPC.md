@@ -44,7 +44,7 @@ Google's protocol buffers are a language- and platform-neutral method for serial
 
 * [Protobuf](https://github.com/protocolbuffers/protobuf/releases)
 
-Remember to follow [Nicholas Renotte's Tensorflow Object Detection YouTube tutorial](https://youtu.be/dZh_ps8gKgs?t=351) for a step-by-step instructions since there are a lot of intricacies in these installations.
+Remember to follow [Nicholas Renotte's Tensorflow Object Detection YouTube tutorial](https://youtu.be/dZh_ps8gKgs?t=351) for __step-by-step instructions of these dependencies__ since there are a lot of intricacies in these installations.
 
 ## Step 0. Install Python (set up your system for multiple Python versions and virtual environments)
 
