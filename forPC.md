@@ -151,11 +151,12 @@ Different Windows OS have different methods.  For Windows 10 I did this through 
 
 1. Type `RegEdit` in the start menu
 2. Paste `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem` into the address bar and click "Enter".
-https://www.thewindowsclub.com/wp-content/uploads/2021/07/Path-for-file-system-regedit.png?ezimgfmt=ng:webp/ngcb153![image](https://user-images.githubusercontent.com/1916488/126911354-7778a676-ee5c-4c6d-97ea-ca16cbbc2af8.png)
+<img width="572" alt="image" src="https://user-images.githubusercontent.com/1916488/126911645-6130cb8f-1d79-49dc-b6a9-8cd71d46f30f.png">
+
 4. Click on `LongPathsEnabled` in the FileSystem folder.
-https://www.thewindowsclub.com/wp-content/uploads/2021/07/Long-paths-enabled.png?ezimgfmt=ng:webp/ngcb153![image](https://user-images.githubusercontent.com/1916488/126911385-1082f7ca-0ccd-4ddf-86f6-047355c7eec5.png)
-5. Change Value Data to `1` and click "OK"
-https://www.thewindowsclub.com/wp-content/uploads/2021/07/change-values-in-DWORD.png?ezimgfmt=ng:webp/ngcb153![image](https://user-images.githubusercontent.com/1916488/126911416-86c468d7-7971-4864-bd09-40d19e4627de.png)
+<img width="505" alt="image" src="https://user-images.githubusercontent.com/1916488/126911660-d8741836-5b35-4b86-95ae-576ad3ad245e.png">
+
+5. Change Value Data to `1` (default is 0) and click "OK"
 
 ### Install TensorFlow 2
 ```
