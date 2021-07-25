@@ -276,7 +276,7 @@ cd labelImg
 pip install PyQt5
 ```
 
-3. Install lxml
+3. Install [lxml](https://lxml.de/installation.html)
 ```
 pip install lxml
 ```
