@@ -144,25 +144,32 @@ python -m pip install --upgrade pip
 ```
 
 4. Make sure all dependencies are installed (see the section on dependencies at the top of this document)
-5. Enable Win32 long paths in the Local Group Policy Editor
 
-You will find the option in `Local Computer Policy > Computer Configuration > Administrative Templates > System > Filesystem`
+### Enable Win32 long paths
 
-For more information follow the instructions For Windows 10 given in StackExchange: https://superuser.com/questions/1119883/windows-10-enable-ntfs-long-paths-policy-option-missing
+Different Windows OS have different methods.  For Windows 10 I did this through the Regedit settings [using the Windows Club directions](https://www.thewindowsclub.com/how-to-enable-or-disable-win32-long-paths-in-windows-11-10)
 
-6. Install TensorFlow 2
+1. Type `RegEdit` in the start menu
+2. Paste `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem` into the address bar and click "Enter".
+https://www.thewindowsclub.com/wp-content/uploads/2021/07/Path-for-file-system-regedit.png?ezimgfmt=ng:webp/ngcb153![image](https://user-images.githubusercontent.com/1916488/126911354-7778a676-ee5c-4c6d-97ea-ca16cbbc2af8.png)
+4. Click on `LongPathsEnabled` in the FileSystem folder.
+https://www.thewindowsclub.com/wp-content/uploads/2021/07/Long-paths-enabled.png?ezimgfmt=ng:webp/ngcb153![image](https://user-images.githubusercontent.com/1916488/126911385-1082f7ca-0ccd-4ddf-86f6-047355c7eec5.png)
+5. Change Value Data to `1` and click "OK"
+https://www.thewindowsclub.com/wp-content/uploads/2021/07/change-values-in-DWORD.png?ezimgfmt=ng:webp/ngcb153![image](https://user-images.githubusercontent.com/1916488/126911416-86c468d7-7971-4864-bd09-40d19e4627de.png)
+
+### Install TensorFlow 2
 ```
 pip install --upgrade tensorflow
 ```
 
-7. Confirm the install was successful
+### Confirm the install was successful
 ```
 python -c "import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
 ```
 
 something like this should be returned: `tf.Tensor(-1402.6809, shape=(), dtype=float32)`
 
-8. install necessary packages
+### install necessary packages
 
 View the current list of packages installed within the virtual environment:
 ```
