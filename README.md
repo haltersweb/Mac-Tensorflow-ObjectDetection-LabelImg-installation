@@ -24,6 +24,27 @@ Coursera has an excellent [instruction video](https://www.coursera.org/lecture/p
 
 ## Step 0. Setting up different Python versions with pyenv (in case you don't have python installed yet)
 
+### Installing XZ for Mac OS
+
+This only needs to be done once on your OS.  If already done, skip this part about installing __XZ__.
+
+[XZ](https://tukaani.org/xz/) is not pre-installed on Mac OS. Therefore, if you are using pyenv to manage multiple Python versions you must install XZ Utils on your machine before installing a Python version.  If you have the desired version already installed, you will need to uninstall it before you install XZ.
+
+1. Update Homebrew.  Brew update usually takes a while.  Go get some coffee while you wait.
+```
+brew update
+```
+
+2.	If the Python version that you want to use is already installed, you will need to uninstall it with:
+```
+pyenv uninstall <desired-python-version>
+```
+
+3.	Install XZ with:
+```
+brew install xz
+```
+
 __pyenv__ is used to install different major and minor releases of Python.
 
 (Instructions: https://youtu.be/-5vd5GEpF-w)
