@@ -55,7 +55,7 @@ For example, I am on BigSur OS.  `pyenv init` instructed me to add 3 lines to `.
 
 ### Installing XZ for Mac OS
 
-This only needs to be done once on your OS.  If already done, skip this part about installing __XZ__.
+This __only needs to be done once__ on your OS.  If already done, skip this part about installing __XZ__.
 
 [XZ](https://tukaani.org/xz/) is not pre-installed on Mac OS. Therefore, if you are using pyenv to manage multiple Python versions you must install XZ Utils on your machine before installing a Python version.
 
@@ -74,8 +74,8 @@ brew install xz
 1. To see a full list of every Python version you can install by typing:
 ```
 pyenv install --list
-
 ```
+
 Besides regular Python versions you can even install anaconda versions and others.
 
 2. Install version(s). For example let's install 3.8.9 and 3.9.4:
