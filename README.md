@@ -24,6 +24,11 @@ Coursera has an excellent [instruction video](https://www.coursera.org/lecture/p
 
 ## Step 0. Setting up different Python versions with pyenv (in case you don't have python installed yet)
 
+__pyenv__ is used to install different major and minor releases of Python.
+
+(Instructions: https://youtu.be/-5vd5GEpF-w)
+(GitHub for pyenv: https://github.com/pyenv/pyenv)
+
 ### Installing XZ for Mac OS
 
 This only needs to be done once on your OS.  If already done, skip this part about installing __XZ__.
@@ -44,11 +49,6 @@ pyenv uninstall <desired-python-version>
 ```
 brew install xz
 ```
-
-__pyenv__ is used to install different major and minor releases of Python.
-
-(Instructions: https://youtu.be/-5vd5GEpF-w)
-(GitHub for pyenv: https://github.com/pyenv/pyenv)
 
 ### Install pyenv with Homebrew:
 
