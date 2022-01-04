@@ -29,27 +29,6 @@ __pyenv__ is used to install different major and minor releases of Python.
 (Instructions: https://youtu.be/-5vd5GEpF-w)
 (GitHub for pyenv: https://github.com/pyenv/pyenv)
 
-### Installing XZ for Mac OS
-
-This only needs to be done once on your OS.  If already done, skip this part about installing __XZ__.
-
-[XZ](https://tukaani.org/xz/) is not pre-installed on Mac OS. Therefore, if you are using pyenv to manage multiple Python versions you must install XZ Utils on your machine before installing a Python version.  If you have the desired version already installed, you will need to uninstall it before you install XZ.
-
-1. Update Homebrew.  Brew update usually takes a while.  Go get some coffee while you wait.
-```
-brew update
-```
-
-2.	If the Python version that you want to use is already installed, you will need to uninstall it with:
-```
-pyenv uninstall <desired-python-version>
-```
-
-3.	Install XZ with:
-```
-brew install xz
-```
-
 ### Install pyenv with Homebrew:
 
 1. Update Homebrew.  Brew update usually takes a while.  Go get some coffee while you wait.
@@ -73,6 +52,22 @@ pyenv init
 For example, I am on BigSur OS.  `pyenv init` instructed me to add 3 lines to `.profile` and to `.zprofile` and then to append `eval "$(pyenv init -)"` into `zshrc` (the zsh config file). Earlier OS may use bin instead of zsh.
 
 (BTW, later if you don't want pyenv to manage its Python versions, comment out the eval line in the .zshrc file. That way python --version = 2.7 (system version) and python3 = whatever version you may have installed without pyenv)
+
+### Installing XZ for Mac OS
+
+This only needs to be done once on your OS.  If already done, skip this part about installing __XZ__.
+
+[XZ](https://tukaani.org/xz/) is not pre-installed on Mac OS. Therefore, if you are using pyenv to manage multiple Python versions you must install XZ Utils on your machine before installing a Python version.
+
+If you have the desired python version already installed, you will need to uninstall it before you install XZ.  Then once XZ is installed, you can reinstall the python version.  If using pyenv the uninstall command would be:
+```
+pyenv uninstall <desired-python-version>
+```
+
+1.	Install XZ with:
+```
+brew install xz
+```
 
 ### Install a python version
 
