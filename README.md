@@ -251,7 +251,7 @@ cp object_detection/packages/tf2/setup.py .
 
 9. Install all dependencies neede for our object detection library (ignore warnings)
 ```
-python -m pip install --use-feature=2020-resolver .
+python -m pip install .
 ```
 
 10. Confirm installation was successful
