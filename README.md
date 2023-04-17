@@ -41,6 +41,8 @@ brew update
 brew install pyenv
 ```
 
+(If you aleady have pyenv and want to update it, update brew first and then type `brew upgrade pyenv`)
+
 ### Configure terminal so that it always loads pyenv whenever we start a new terminal instance
 
 1. Find out what file changes you need to make for your particular MacOS by typing:
