@@ -41,7 +41,7 @@ brew update
 brew install pyenv
 ```
 
-(If you aleady have pyenv and want to update it, update brew first and then type `brew upgrade pyenv`)
+(If you just want to __update pyenv__, update brew first, and then type `brew upgrade pyenv`)
 
 ### Configure terminal so that it always loads pyenv whenever we start a new terminal instance
 
