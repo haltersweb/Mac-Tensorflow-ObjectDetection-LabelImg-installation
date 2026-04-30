@@ -41,7 +41,8 @@ brew update
 brew install pyenv
 ```
 
-(If you just want to __update pyenv__, update brew first, and then type `brew upgrade pyenv`)
+#### Update pyenv
+If you just want to __update pyenv__, update brew first; this may auto-update pyenv.  If not, then type `brew upgrade pyenv`
 
 ### Configure terminal so that it always loads pyenv whenever we start a new terminal instance
 
@@ -71,7 +72,7 @@ pyenv uninstall <desired-python-version>
 brew install xz
 ```
 
-### Install a python version
+### Install a python version (_you may need to update pyenv: see above_)
 
 1. To see a full list of every Python version you can install by typing:
 ```
